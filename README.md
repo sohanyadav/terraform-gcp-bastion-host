@@ -20,7 +20,7 @@ To use this module, you should have Terraform installed and configured for GCP. 
 
 ```hcl
 module "iap_bastion" {
-  source      = "https://github.com/opsstation/terraform-gcp-bastion-host.git"
+  source      = "https://github.com/sohanyadav/terraform-gcp-bastion-host.git"
   name        = "dev"
   environment = "iap-bastion"
   zone        = "us-west1-a"
@@ -45,14 +45,14 @@ This example demonstrates how to create various GCP resources using the provided
 - This module currently does not provide any outputs.
 
 # Examples
-For detailed examples on how to use this module, please refer to the [example](https://github.com/opsstation/terraform-gcp-bastion-host/tree/master/_example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [example](https://github.com/sohanyadav/terraform-gcp-bastion-host/tree/master/_example) directory within this repository.
 
 ## Authors
 Your Name
 Replace '[License Name]' and '[Your Name]' with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/opsstation/terraform-gcp-bastion-host/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/sohanyadav/terraform-gcp-bastion-host/blob/master/LICENSE) file for details.
 
 
 
@@ -77,8 +77,8 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_iap_tunneling"></a> [iap\_tunneling](#module\_iap\_tunneling) | ./modules/iap-tunneling | n/a |
-| <a name="module_instance_template"></a> [instance\_template](#module\_instance\_template) | git::git@github.com:opsstation/terraform-gcp-vm-template-instance.git | v1.0.0 |
-| <a name="module_labels"></a> [labels](#module\_labels) | git::git@github.com:opsstation/terraform-gcp-labels.git | v1.0.0 |
+| <a name="module_instance_template"></a> [instance\_template](#module\_instance\_template) | git::git@github.com:sohanyadav/terraform-gcp-vm-template-instance.git | v1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::git@github.com:sohanyadav/terraform-gcp-labels.git | v1.0.0 |
 
 ## Resources
 
