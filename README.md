@@ -105,13 +105,13 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 | <a name="input_image_project"></a> [image\_project](#input\_image\_project) | Project where the source image for the Bastion comes from | `string` | `"ubuntu-os-cloud"` | no |
 | <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. sequence of application name and environment `name`,`environment`,'attribute' [`webserver`,`qa`,`devops`,`public`,] . | `list(any)` | <pre>[<br>  "name",<br>  "environment"<br>]</pre> | no |
 | <a name="input_labels"></a> [labels](#input\_labels) | Key-value map of labels to assign to the bastion host | `map(any)` | `{}` | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg sohanyadav. | `string` | `""` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg opsstation. | `string` | `""` | no |
 | <a name="input_members"></a> [members](#input\_members) | List of IAM resources to allow access to the bastion host | `list(string)` | `[]` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the resource. Provided by the client when the resource is created. | `string` | `"test"` | no |
 | <a name="input_network"></a> [network](#input\_network) | Self link for the network on which the Bastion should live | `string` | `""` | no |
 | <a name="input_random_role_id"></a> [random\_role\_id](#input\_random\_role\_id) | Enables role random id generation. | `bool` | `true` | no |
 | <a name="input_region"></a> [region](#input\_region) | The region where the bastion instance template will live | `string` | `"us-west1"` | no |
-| <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `"https://github.com/sohanyadav/terraform-gcp-bastion-host.git"` | no |
+| <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `"https://github.com/opsstation/terraform-gcp-bastion-host.git"` | no |
 | <a name="input_service_account_email"></a> [service\_account\_email](#input\_service\_account\_email) | If set, the service account and its permissions will not be created. The service account being passed in should have at least the roles listed in the `service_account_roles` variable so that logging and OS Login work as expected. | `string` | `""` | no |
 | <a name="input_service_account_name"></a> [service\_account\_name](#input\_service\_account\_name) | Account ID for the service account | `string` | `"bastion"` | no |
 | <a name="input_service_account_roles"></a> [service\_account\_roles](#input\_service\_account\_roles) | List of IAM roles to assign to the service account. | `list(string)` | <pre>[<br>  "roles/logging.logWriter",<br>  "roles/monitoring.metricWriter",<br>  "roles/monitoring.viewer",<br>  "roles/compute.osLogin"<br>]</pre> | no |
